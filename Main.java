@@ -20,10 +20,9 @@ public class Main {
                     n = i;
                     String line = Files.readAllLines(Paths.get("/Users/hxrvelle/Documents/Java/ip.txt")).get(n);
                     String[] switchLine = line.split("\t");
-                    String switched = switchLine[0] + ":" + switchLine[1];
-                    System.out.println(switched);
+                    String ips = switchLine[0] + ":" + switchLine[1];
+                    System.out.println(ips);
 
-                    String ips = switched;
                     try {
                         FileOutputStream fos = new FileOutputStream("/Users/hxrvelle/Documents/Java/t_ip.txt", true);
                         byte[] buffer = ips.getBytes();
