@@ -9,7 +9,9 @@ public class Main {
         try {
             BufferedReader reader = new BufferedReader(new FileReader("/Users/hxrvelle/Documents/Java/ip.txt"));
             int lines = 0;
-            while (reader.readLine() != null) lines++;
+            while (reader.readLine() != null) {
+                lines++;
+            }
             reader.close();
 
             int n;
