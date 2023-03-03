@@ -22,15 +22,11 @@ public class Main {
                     String[] switchLine = line.split("\t");
                     String ips = switchLine[0] + ":" + switchLine[1];
                     System.out.println(ips);
-
-                    try {
-                        FileOutputStream fos = new FileOutputStream("/Users/hxrvelle/Documents/Java/t_ip.txt", true);
-                        byte[] buffer = ips.getBytes();
-                        fos.write(buffer);
-                        fos.write(10);
-                    } catch (Exception e) {
-                        e.printStackTrace();
-                    }
+                    
+                    FileOutputStream fos = new FileOutputStream("/Users/hxrvelle/Documents/Java/t_ip.txt", true);
+                    byte[] buffer = ips.getBytes();
+                    fos.write(buffer);
+                    fos.write(10);
                 }
             }
         } catch (Exception e) {
